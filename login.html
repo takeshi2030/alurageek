@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!------NAV------->
+    <header class="w-full flex justify-between items-center px-4 py-4 md:px-12 lg:px-40">
+        <div class="flex w-2/3">
+            <img class="w-28 lg:w-48" src="img/logo_alurageek.svg" alt="joystic-logo">
+            <form class="hidden md:block w-72 lg:w-3/5 bg-gray-100 rounded-full ml-8 px-4 py-2 md:flex md:justify-between"> <!--search desktop-->
+                <input type="" placeholder="O que deseja encontrar?" class="bg-gray-100 focus:outline-none">
+                <button class="text-gray-300"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <button class="sm:hidden ml-3 text-gray-700 px-2"><i class="fa-solid fa-magnifying-glass"></i></button> <!--botão search mobile-->
+    </header>
+
+    <!------PRINCIPAL------->
+    <main>
+        <!------LOGIN------->
+        <section class="bg-gray-100 text-center lg:flex lg:flex-col lg:justify-center lg:items-center">
+            <div class="px-12 md:px-60 py-28 md:py-16 lg:w-2/3">
+                <span class="text-base lg:text-xl font-bold">Iniciar Sessão</span>
+                <form class="flex flex-col py-4 lg:w-full" action="">
+                    <input class="px-3 py-2 mb-4 lg:py-3 lg:px-4 lg:text-lg drop-shadow shadow" type="email" placeholder="Escreva seu email">
+                    <input class="px-3 py-2 lg:py-3 lg:px-4 lg:text-lg drop-shadow shadow" type="password" placeholder="Escreva sua senha">
+                </form>
+                <button class="px-8 py-3 text-sm lg:w-full lg:py-3 lg:px-4 lg:text-lg font-semibold bg-blue-500 text-white text-center">Entrar</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-------CONTATO-------->
+    <section class="flex flex-col md:flex-row items-center md:items-start md:justify-between bg-blue-50 py-8 px-4 md:px-12 lg:px-40">
+        <div class="flex flex-col items-center md:items-start">
+            <img class="w-44 lg:w-48 mb-6" src="img/logo_alurageek.svg" alt="joystic-logo">
+            <ul class="text-base text-center md:text-left px-16 md:px-0 mb-3">
+                <li class="mb-3">Quem somos nós</li>
+                <li class="mb-3">Política de privacidade</li>
+                <li class="mb-3">Programa fidelidade</li>
+                <li class="mb-3">Nossas lojas</li>
+                <li class="mb-3">Quero ser franqueado</li>
+                <li class="mb-3">Anuncie aqui</li>
+            </ul>
+        </div>
+        <form class="flex flex-col px-8 md:w-2/3 " action="">
+            <label class="text-base font-bold mb-4" for="">Fale conosco</label>
+            <input class="p-3 mb-3" type="name" placeholder="nome">
+            <textarea class="h-24 p-3 mb-3" name="" id="" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea>
+            <button class="w-40 px-2 text-sm font-semibold py-3 bg-blue-500 text-white">Enviar mensagem</button>
+        </form>    
+    </section>
+    
+    <!-------FOOTER-------->
+    <footer class="text-center flex flex-col items-center py-6">
+        <p class="text-sm font-base">Desenvolvido por @Takeshi2030<br>2022</p>
+    </footer>
+</body>
+</html>
