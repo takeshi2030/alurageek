@@ -19,20 +19,24 @@
                 <button class="text-gray-300"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
+        <a href="login.html"><button class="w-40 border border-solid border-blue-500 px-2 py-2 text-blue-500 text-sm font-semibold">Menu Administrador</button></a>
         <button class="sm:hidden ml-3 text-gray-700 px-2"><i class="fa-solid fa-magnifying-glass"></i></button> <!--botão search mobile-->
     </header>
 
     <!------PRINCIPAL------->
     <main>
-        <!------LOGIN------->
-        <section class="bg-gray-100 text-center lg:flex lg:flex-col lg:justify-center lg:items-center">
-            <div class="px-12 md:px-60 py-28 md:py-16 lg:w-2/3">
-                <span class="text-base lg:text-xl font-bold">Iniciar Sessão</span>
-                <form class="flex flex-col py-4 lg:w-full" action="">
-                    <input class="px-3 py-2 mb-4 lg:py-3 lg:px-4 lg:text-lg drop-shadow shadow" type="email" placeholder="Escreva seu email">
-                    <input class="px-3 py-2 lg:py-3 lg:px-4 lg:text-lg drop-shadow shadow" type="password" placeholder="Escreva sua senha">
+        <!------ADICIONAR NOVO PRODUTO------->
+        <section class="bg-gray-100 lg:flex lg:flex-col lg:justify-center lg:items-center">
+            <div class="px-4 py-6 md:py-16 w-full lg:w-3/6">
+                <span class="text-xl lg:text-2xl font-bold">Adicionar novo produto</span>
+                <form class="flex flex-col py-4" action="">
+                    <input class="px-3 pt-6 pb-2 mb-4 lg:py-3 lg:px-4 lg:text-lg drop-shadow shadow" type="url">
+                    <input class="px-3 pt-6 pb-2 mb-4 lg:py-3 lg:px-4 lg:text-lg drop-shadow shadow" type="text">
+                    <input class="px-3 pt-6 pb-2 mb-4 lg:py-3 lg:px-4 lg:text-lg drop-shadow shadow" type="text">
+                    <input class="px-3 pt-6 pb-2 mb-4 lg:py-3 lg:px-4 lg:text-lg drop-shadow shadow" type="number" placeholder="Preço do produto">
+                    <textarea class="px-3 py-2 lg:py-3 lg:px-4 lg:text-lg drop-shadow shadow" type="text" placeholder="Descrição do produto"></textarea>
                 </form>
-                <button class="px-8 py-3 text-sm lg:w-full lg:py-3 lg:px-4 lg:text-lg font-semibold bg-blue-500 text-white text-center">Entrar</button>
+                <button class="px-8 py-3 text-sm w-full lg:py-3 lg:px-4 lg:text-lg font-semibold bg-blue-500 text-white text-center">Adicionar produto</button>
             </div>
         </section>
 
