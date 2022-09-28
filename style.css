@@ -10,9 +10,15 @@ h1, h2 {
 
 .hero {
     width: 100%;
-    height: 352px;
-    background-image: url("img/banner-image.png");
+    height: 210px;
+    background-image: url("img/hero.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        height: 352px;
+    }
 }
