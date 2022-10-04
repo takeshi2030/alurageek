@@ -19,7 +19,6 @@
                 <button class="text-gray-300"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
-        <button href=""><button class="w-32 border border-solid border-blue-500 ml-3 px-2 py-2 text-blue-500 text-sm font-semibold">Login</button></a>
         <button class="sm:hidden ml-3 text-gray-700 px-2"><i class="fa-solid fa-magnifying-glass"></i></button> <!--botão search mobile-->
     </header>
 
@@ -29,7 +28,7 @@
         <section class="mb-4">
             <div class="md:flex md:items-center md:justify-between px-4 md:px-12 lg:px-40 mb-4">
                 <h3 class="text-xl lg:text-4xl font-bold text-gray-600">Todos os produtos</h3>
-                <button class="w-40 px-2 mt-4 text-sm font-base py-3 bg-blue-500 text-white">Adicionar produto</button>
+                <a href="./addProduto.html"><button class="w-40 px-2 mt-4 text-sm font-base py-3 bg-blue-500 text-white hover:bg-blue-600 duration-150">Adicionar produto</button></a>
             </div>
             <!------GRID PRODUTOS------->
             <div class="px-2 md:px-10 lg:px-40 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
@@ -256,21 +255,21 @@
     <!-------CONTATO-------->
     <section class="md:flex items-center md:items-start md:justify-between bg-blue-50 py-8 px-4 md:px-12 lg:px-40">
         <div class="flex flex-col lg:flex-row lg:w-1/2 items-center md:items-start">
-            <img class="w-44 lg:w-48 lg:mr-28 mb-6" src="img/logo_alurageek.svg" alt="joystic-logo">
+            <a href="./index.html"><img class="w-44 lg:w-48 lg:mr-28 mb-6" src="img/logo_alurageek.svg" alt="joystic-logo"></a>
             <ul class="text-base text-center md:text-left lg:ml-16px px-16 md:px-0 mb-3">
-                <li class="mb-3">Quem somos nós</li>
-                <li class="mb-3">Política de privacidade</li>
-                <li class="mb-3">Programa fidelidade</li>
-                <li class="mb-3">Nossas lojas</li>
-                <li class="mb-3">Quero ser franqueado</li>
-                <li class="mb-3">Anuncie aqui</li>
+                <a href=""><li class="mb-3 hover:text-blue-600">Quem somos nós</li></a>
+                <a href=""><li class="mb-3 hover:text-blue-600">Política de privacidade</li></a>
+                <a href=""><li class="mb-3 hover:text-blue-600">Programa fidelidade</li></a>
+                <a href=""><li class="mb-3 hover:text-blue-600">Nossas lojas</li></a>
+                <a href=""><li class="mb-3 hover:text-blue-600">Quero ser franqueado</li></a>
+                <a href=""><li class="mb-3 hover:text-blue-600">Anuncie aqui</li></a>
             </ul>
         </div>
         <form class="flex flex-col md:px-8 md:w-2/3 lg:w-1/2" action="">
             <label class="text-base font-bold mb-4" for="">Fale conosco</label>
-            <input class="p-3 mb-3" type="name" placeholder="nome">
-            <textarea class="h-24 p-3 mb-3" name="" id="" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea>
-            <button class="w-40 px-2 text-sm font-semibold py-3 bg-blue-500 text-white">Enviar mensagem</button>
+            <input class="p-3 mb-3 drop-shadow shadow" type="name" placeholder="nome">
+            <textarea class="h-24 p-3 mb-3 drop-shadow shadow" name="" id="" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea>
+            <button class="w-40 px-2 text-sm font-semibold py-3 bg-blue-500 text-white hover:bg-blue-600 duration-150">Enviar mensagem</button>
         </form>   
     </section>
     
