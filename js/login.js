@@ -46,6 +46,5 @@ function acessoValidate(){
         window.location.href = '/produtos.html'
     } else {
         setErrorSubmit(2);
-        campos(0).focus();
     }
 }
