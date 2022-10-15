@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alura Geek</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <title>Alura Geek | Login</title>
 </head>
 <body>
     <!------NAV------->
@@ -29,7 +29,7 @@
             <div class="px-12 md:px-60 py-24 md:py-16 lg:py-28 lg:w-3/5">
                 <span class="text-base lg:text-xl font-bold">Iniciar Sessão</span>
                 <form class="flex flex-col py-4 lg:w-full" id="form">
-                    <input class="px-3 py-2 lg:py-3 lg:px-4 lg:text-lg rounded drop-shadow shadow required" onblur="emailValidate()" type="email" placeholder="Escreva seu e-mail">
+                    <input type="email" name="email" id="email" placeholder="Escreva seu e-mail" class="px-3 py-2 lg:py-3 lg:px-4 lg:text-lg rounded drop-shadow shadow required" onblur="emailValidate()">
                     <span class="pt-1 text-red-500 font-bold hidden span-required">O e-mail digitado não é valido.</span>
                     <input class="mt-5 px-3 py-2 lg:py-3 lg:px-4 lg:text-lg rounded drop-shadow shadow required" onblur="senhaVazia()" type="password" placeholder="Escreva sua senha">
                     <span class="pt-1 text-red-500 font-bold hidden span-required">O campo não pode estar vazio.</span>

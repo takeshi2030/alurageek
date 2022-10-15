@@ -8,7 +8,9 @@ const senha = '123';
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     emailValidate();
-    senhaVazia()
+    senhaVazia();
+    removeError(0);
+    removeError(1);
 })
 
 function setError(index){
@@ -46,5 +48,6 @@ function acessoValidate(){
         window.location.href = '/produtos.html'
     } else {
         setErrorSubmit(2);
+        campos[0].focus();
     }
 }
