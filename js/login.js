@@ -3,7 +3,7 @@ const campos = document.querySelectorAll('.required');
 const spans  = document.querySelectorAll('.span-required');
 const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
 const emailValido = '123@123.com';
-const senha = '123';
+const senha = '123456';
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();

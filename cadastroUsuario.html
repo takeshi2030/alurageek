@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>Alura Geek | Login</title>
+    <title>Alura Geek | Cadastro Usuário</title>
 </head>
 <body>
     <!------NAV------->
@@ -24,19 +24,39 @@
 
     <!------PRINCIPAL------->
     <main>
-        <!------LOGIN------->
+        <!------CADASTRO------->
         <section class="bg-gray-100 text-center lg:flex lg:flex-col lg:justify-center lg:items-center">
             <div class="px-12 md:px-60 py-24 md:py-16 lg:py-28 lg:w-3/5">
-                <span class="text-base lg:text-xl font-bold">Iniciar Sessão</span>
+                <span class="text-2xl mb-5 lg:text-xl font-bold">Preencha seu cadastro</span>
                 <form class="flex flex-col py-4 lg:w-full" id="form">
-                    <input type="email" name="email" id="email" placeholder="Escreva seu e-mail" class="px-3 py-2 lg:py-3 lg:px-4 lg:text-lg rounded drop-shadow shadow required" onblur="emailValidate()">
-                    <span class="pt-1 text-red-500 font-bold hidden span-required">O e-mail digitado não é valido.</span>
-                    <input type="password" placeholder="Escreva sua senha" class="mt-5 px-3 py-2 lg:py-3 lg:px-4 lg:text-lg rounded drop-shadow shadow required" onblur="senhaVazia()" >
-                    <span class="pt-1 text-red-500 font-bold hidden span-required">O campo não pode estar vazio.</span>
-                    <span class="mt-4 text-red-500 font-bold hidden span-required">E-mail ou senha invalidos.</span>
-                    <button class="mt-4 px-8 py-3 text-sm lg:w-full lg:py-3 lg:px-4 lg:text-lg font-semibold bg-blue-500 text-white text-center drop-shadow shadow hover:bg-blue-400 duration-150" type="submit" onclick="acessoValidate()">Entrar</button>
+
+                    <span class="text-base mb-3 lg:text-xl font-medium">Informações básicas</span>
+                    <!-- NOME -->
+                    <input type="text" data-tipo="nome" name="nome" id="nome" placeholder="Nome Completo" required class=" px-3 py-2 lg:py-3 lg:px-4 lg:text-lg rounded drop-shadow shadow">
+                    <span class="mensagem-erro pt-1 text-sm text-red-500 font-medium hidden">Campo invalido</span>
+                    
+                    <!-- EMAIL -->
+                    <input type="email" data-tipo="email" name="email" id="email" placeholder="Escreva seu e-mail" required class="mt-3 px-3 py-2 lg:py-3 lg:px-4 lg:text-lg rounded drop-shadow shadow">
+                    <span class="mensagem-erro pt-1 text-sm text-red-500 font-medium hidden">Campo invalido</span>
+                    
+                    <!-- SENHA -->
+                    <input type="password" data-tipo="senha" placeholder="Senha" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6,14}$" required class="mt-3 px-3 py-2 lg:py-3 lg:px-4 lg:text-lg rounded drop-shadow shadow required">
+                    <span class="mensagem-erro pt-1 text-sm text-red-500 font-medium hidden">Campo invalido</span>
+
+                    <span class="mt-5 text-base  lg:text-xl font-medium">Informações pessoais</span>
+                    <!-- DATA NASCIMENTO -->
+                    <input type="date" name="nascimento" id="nascimento" placeholder="Data de nascimento" data-tipo="dataNascimento" required class="mt-3 px-3 py-2 lg:py-3 lg:px-4 lg:text-lg rounded drop-shadow shadow">
+                    <span class="mensagem-erro pt-1 text-sm text-red-500 font-medium hidden">Campo invalido</span>
+
+                    <!-- CPF -->
+                    <input type="text" name="cpf" id="cpf" placeholder="Digite o seu CPF" data-tipo="cpf" required class="mt-3 px-3 py-2 lg:py-3 lg:px-4 lg:text-lg rounded drop-shadow shadow">
+                    <span class="mensagem-erro pt-1 text-sm text-red-500 font-medium hidden">Campo invalido</span>
+                    
+
+
+
+                    <button type="submit" class="mt-4 px-8 py-3 text-sm lg:w-full lg:py-3 lg:px-4 lg:text-lg font-semibold bg-blue-500 text-white text-center drop-shadow shadow hover:bg-blue-400 duration-150">Cadastrar</button>
                 </form>
-                <p class="text-gray-400">Ainda não possui cadastro? <a href="" class="text-blue-500">Clique aqui.</a></p>
             </div>
         </section>
 
@@ -68,6 +88,6 @@
     <footer class="text-center flex flex-col items-center py-8">
         <p class="text-sm font-base">Desenvolvido por <span class="font-bold">André Maemura</span> | 2022</p>
     </footer>
-    <script src="/js/login.js"></script>
+    <script src="js/app.js" type="module"></script>
 </body>
 </html>
