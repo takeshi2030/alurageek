@@ -26,7 +26,8 @@ const tiposDeErro = [
 //OBJETOS DE ERRO
 const mensagemDeErro = {
     nome: {
-        valueMissing: 'O campo nome não pode estar vazio.'
+        valueMissing: 'O campo nome não pode estar vazio.',
+        patternMismatch: 'O nome não pode conter mais que 40 caracteres.'
     },
     email: {
         valueMissing: 'O campo email não pode estar vazio.',
@@ -66,13 +67,17 @@ const mensagemDeErro = {
     },
     preco: {
         valueMissing:'O campo preco não pode estar vazio.'
+    },
+    mensagemEnviada: {
+        valueMissing: 'O campo nome não pode estar vazio.',
+        patternMismatch: 'O nome não pode conter mais que 40 caracteres.'
     }   
 }
 
 const validadores = {
     dataNascimento:input => validaDataNascimento(input),
     cpf:input => validaCPF(input),
-    cep:input => recuperarCEP(input)
+    cep:input => recuperarCEP(input),
 }
 
 function mostraMensagemDeErro(tipoDeInput, input) {
@@ -84,6 +89,8 @@ function mostraMensagemDeErro(tipoDeInput, input) {
     })
     return mensagem
 }
+
+// VALIDA DATA
 
 function validaDataNascimento(input) {
     const dataRecebida = new Date(input.value)
@@ -102,6 +109,8 @@ function maiorQue18(data) {
 
     return dataMais18 <= dataAtual
 }
+
+// VALIDA CPF
 
 function validaCPF(input) {
     const cpfFormatado = input.value.replace(/\D/g, '')
@@ -211,4 +220,49 @@ function preencheCampoComCPF(data) {
     logradouro.value = data.logradouro
     cidade.value = data.localidade
     estado.value = data.uf
+}
+
+// VALIDA MENSAGEM
+
+export function validaMensagemEnviada(textarea)
+{
+    const mensagemEnviada = textarea.dataset
+
+    if (validadorMensagem[mensagemEnviada]) {
+    }
+    if (!textarea.validity.valid) {
+        textarea.classList.add('border-solid', 'border-2', 'border-red-500');
+        textarea.nextElementSibling.classList.remove('hidden');
+        textarea.nextElementSibling.innerHTML = mostraErroTextarea(mensagemEnviada, textarea);
+    } else {
+        textarea.classList.remove('border-solid', 'border-2', 'border-red-500');
+        textarea.nextElementSibling.classList.add('hidden');
+        textarea.nextElementSibling.innerHTML = '';
+    }
+}
+
+const tiposErroTextarea = [
+    'valueMissing',
+    'patternMismatch'
+]
+
+const mensagemErroTextarea = {
+    mensagemEnviada: {
+        valueMissing: 'O campo mensagem não pode estar vazio.',
+        patternMismatch: 'O mensagem não pode conter mais que 120 caracteres.'
+    }
+}
+
+const validadorMensagem = {
+    mensagemEnviada: textarea => validaMensagemEnviada(textarea)
+}
+
+function mostraErroTextarea(mensagemEnviada, textarea) {
+    let mensagem = ''
+    tiposErroTextarea.forEach(erro => {
+        if(textarea.validity[erro]) {
+            mensagem = mensagemErroTextarea[mensagemEnviada][erro]
+        }
+    })
+    return mensagem
 }
