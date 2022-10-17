@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alura Geek</title>
+    <title>Alura Geek | Cadastro de Produto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
@@ -31,21 +31,31 @@
                 <span class="text-xl lg:text-2xl font-bold">Adicionar novo produto</span>
                 <form class="flex flex-col py-4 relative" action="">
                     
-                    <label class="absolute text-sm text-gray-400 top-6 left-3" for="">URL da imagem</label>
-                    <input class="px-3 pt-8 pb-2 mb-4 lg:px-3 lg:text-xl drop-shadow shadow rounded" type="url">
+                    <!-- URL -->
+                    <label class="pl-3 mb-1 text-sm text-gray-400 top-6 left-3" for="">URL da imagem</label>
+                    <input type="url" data-tipo="url" placeholder="URL" class="px-3 pt-3 pb-3 lg:px-3 lg:text-xl drop-shadow shadow rounded" required>
+                    <span class="pl-3 mb-1 mensagem-erro pt-1 text-sm text-red-500 font-medium hidden"></span>
 
-                    <label class="absolute text-sm text-gray-400 pt-2 top-24 lg:pt-3 left-3" for="">Categoria</label>
-                    <input class="px-3 pt-8 pb-2 mb-4 lg:px-3 lg:text-xl drop-shadow shadow rounded" type="text" placeholder="Consoles">
+                    <!-- CATEGORIA -->
+                    <label class="pl-3 mt-3 mb-1 text-sm text-gray-400" for="">Categoria</label>
+                    <input type="text" data-tipo="categoria" placeholder="Consoles" class="px-3 pt-3 pb-3 lg:px-3 lg:text-xl drop-shadow shadow rounded" required>
+                    <span class="pl-3 mb-1 mensagem-erro pt-1 text-sm text-red-500 font-medium hidden"></span>
 
-                    <label class="absolute text-sm text-gray-400 pt-2 top-44 lg:pt-4 left-3" for="">Nome do produto</label>
-                    <input class="px-3 pt-8 pb-2 mb-4 lg:px-3 lg:text-xl drop-shadow shadow rounded" type="text" placeholder="Produto XYZ">
+                    <!-- NOME DO PRODUTO -->
+                    <label class="pl-3 mt-3 mb-1 text-sm text-gray-400" for="">Nome do produto</label>
+                    <input type="text" data-tipo="nome" name="nome" id="nome" placeholder="Produto XYZ" class="px-3 pt-3 pb-3 lg:px-3 lg:text-xl drop-shadow shadow rounded" required>
+                    <span class="pl-3 mb-1 mensagem-erro pt-1 text-sm text-red-500 font-medium hidden"></span>
 
-                    <label class="absolute text-sm text-gray-400 pt-2 top-64 lg:pt-5 left-3" for="">Preço do produto</label>
-                    <input class="px-3 pt-8 pb-2 mb-4 lg:px-3 lg:text-xl drop-shadow shadow rounded" type="" placeholder="R$ 60,00">
+                    <!-- PREÇO -->
+                    <label class="pl-3 mt-3 mb-1 text-sm text-gray-400" for="">Preço do produto</label>
+                    <input type="" data-tipo="preco" class="px-3 pt-3 pb-3 lg:px-3 lg:text-xl drop-shadow shadow rounded" required>
+                    <span class="pl-3 mb-1 mensagem-erro pt-1 text-sm text-red-500 font-medium hidden"></span>
 
-                    <textarea class="px-3 py-2 lg:py-3 lg:px-4 lg:text-xl drop-shadow shadow rounded" type="text" placeholder="Descrição do produto"></textarea>
+                    <!-- DESCRIÇÃO -->
+                    <textarea type="text" data-tipo="descricao" placeholder="Descrição do produto" class="mt-5 px-3 py-2 lg:py-3 lg:px-4 lg:text-xl drop-shadow shadow rounded"></textarea>
+                    <span class="pl-3 mb-1 mensagem-erro pt-1 text-sm text-red-500 font-medium hidden"></span>
                 </form>
-                <a href="produtos.html"><button class="px-8 py-3 text-sm w-full lg:py-3 lg:px-4 lg:text-lg font-semibold bg-blue-500 text-white text-center hover:bg-blue-400">Adicionar produto</button></a>
+                <a href=""><button class="mt-4 px-8 py-3 text-sm w-full lg:py-3 lg:px-4 lg:text-lg font-semibold bg-blue-500 text-white text-center hover:bg-blue-400">Adicionar produto</button></a>
             </div>
         </section>
 
@@ -77,5 +87,6 @@
     <footer class="text-center flex flex-col items-center py-8">
         <p class="text-sm font-base">Desenvolvido por <span class="font-bold">André Maemura</span> | 2022</p>
     </footer>
-</body>
+    <script src="js/app.js" type="module"></script>
+    <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
 </html>
