@@ -1,4 +1,4 @@
-import { valida, checkLength } from './validacao.js';
+import { valida, validaMensagemEnviada } from './validacao.js';
 
 const inputs = document.querySelectorAll('input')
 const textareas = document.querySelectorAll('textarea')
@@ -22,6 +22,6 @@ inputs.forEach(input => {
 
 textareas.forEach(textarea => {
     textarea.addEventListener('blur', (evento) => {
-        checkLength(evento.target)
+        validaMensagemEnviada(evento.target)
     })
 })
