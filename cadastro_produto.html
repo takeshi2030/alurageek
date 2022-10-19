@@ -33,12 +33,12 @@
                     
                     <!-- URL -->
                     <label class="pl-3 mb-1 text-sm text-gray-400 top-6 left-3" for="">URL da imagem</label>
-                    <input type="url" data-tipo="url" placeholder="URL" class="px-3 pt-3 pb-3 lg:px-3 lg:text-xl drop-shadow shadow rounded" required>
+                    <input type="url" data-tipo="url" id="link-img" placeholder="URL" class="px-3 pt-3 pb-3 lg:px-3 lg:text-xl drop-shadow shadow rounded">
                     <span class="pl-3 mb-1 mensagem-erro pt-1 text-sm text-red-500 font-medium hidden"></span>
 
                     <!-- CATEGORIA -->
                     <label class="pl-3 mt-3 mb-1 text-sm text-gray-400" for="">Categoria</label>
-                    <input type="text" data-tipo="categoria" placeholder="Consoles" class="px-3 pt-3 pb-3 lg:px-3 lg:text-xl drop-shadow shadow rounded" required>
+                    <input type="text" data-tipo="categoria" id="categoria" placeholder="Consoles" class="px-3 pt-3 pb-3 lg:px-3 lg:text-xl drop-shadow shadow rounded" required>
                     <span class="pl-3 mb-1 mensagem-erro pt-1 text-sm text-red-500 font-medium hidden"></span>
 
                     <!-- NOME DO PRODUTO -->
@@ -48,14 +48,16 @@
 
                     <!-- PREÇO -->
                     <label class="pl-3 mt-3 mb-1 text-sm text-gray-400" for="">Preço do produto</label>
-                    <input type="" data-tipo="preco" class="px-3 pt-3 pb-3 lg:px-3 lg:text-xl drop-shadow shadow rounded" required>
+                    <input type="" data-tipo="preco" id="preco" class="px-3 pt-3 pb-3 lg:px-3 lg:text-xl drop-shadow shadow rounded" required>
                     <span class="pl-3 mb-1 mensagem-erro pt-1 text-sm text-red-500 font-medium hidden"></span>
 
                     <!-- DESCRIÇÃO -->
-                    <textarea type="text" data-tipo="descricao" placeholder="Descrição do produto" class="mt-5 px-3 py-2 lg:py-3 lg:px-4 lg:text-xl drop-shadow shadow rounded"></textarea>
+                    <textarea type="text" data-tipo="descricao" id="descricao" placeholder="Descrição do produto" class="mt-5 px-3 py-2 lg:py-3 lg:px-4 lg:text-xl drop-shadow shadow rounded"></textarea>
                     <span class="pl-3 mb-1 mensagem-erro pt-1 text-sm text-red-500 font-medium hidden"></span>
+
+                    <button type="submit" class="mt-4 px-8 py-3 text-sm w-full lg:py-3 lg:px-4 lg:text-lg font-semibold bg-blue-500 text-white text-center hover:bg-blue-400">Adicionar produto</button>
                 </form>
-                <a href=""><button class="mt-4 px-8 py-3 text-sm w-full lg:py-3 lg:px-4 lg:text-lg font-semibold bg-blue-500 text-white text-center hover:bg-blue-400">Adicionar produto</button></a>
+                
             </div>
         </section>
 
