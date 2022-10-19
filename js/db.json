@@ -1,0 +1,128 @@
+[
+    {
+      "id": 1,
+      "descricao": "Caneca Stormtrooper",
+      "image":"caneca_stormtrooper.svg",
+      "preco": "R$ 70,00",
+      "section": "star_wars-section"
+    },
+    {
+      "id": 2,
+      "descricao": "Boneco Kylo Ren",
+      "image":"boneco_kyloRen.svg",
+      "preco": "R$ 135,00",
+      "section": "star_wars-section"
+    },
+    {
+      "id": 3,
+      "descricao": "Boneco Baby Yoda",
+      "image":"boneco_babyYoda.svg",
+      "preco": "R$ 115,00",
+      "section": "star_wars-section"
+    },
+    {
+      "id": 4,
+      "descricao": "Boneco Stormtrooper",
+      "image":"boneco_stormtrooper.svg",
+      "preco": "R$ 155,00",
+      "section": "star_wars-section"
+    },
+    {
+      "id": 5,
+      "descricao": "Boneco Mestre Yoda",
+      "image":"boneco_yoda.svg",
+      "preco": "R$ 125,00",
+      "section": "star_wars-section"
+    },
+    {
+      "id": 6,
+      "descricao": "Lego Vader x Pilot",
+      "image":"lego_cabecaVaderPilot.svg",
+      "preco": "R$ 265,00",
+      "section": "star_wars-section"
+    },
+    {
+      "id": 7,
+      "descricao": "Controle Xbox Branco",
+      "image":"xbox_white_ control.svg",
+      "preco": "R$ 312,00",
+      "section": "consoles-section"
+    },
+    {
+      "id": 8,
+      "descricao": "Playstation 5",
+      "image":"playstation5.svg",
+      "preco": "R$ 4380,00",
+      "section": "consoles-section"
+    },
+    {
+      "id": 9,
+      "descricao": "Nintendinho",
+      "image":"nintendinho.svg",
+      "preco": "R$ 715,00",
+      "section": "consoles-section"
+    },
+    {
+      "id": 10,
+      "descricao": "Nintendo Switch",
+      "image":"nintendo_switch.svg",
+      "preco": "R$ 416,00",
+      "section": "consoles-section"
+    },
+    {
+      "id": 11,
+      "descricao": "Xbox serie X",
+      "image":"xbox_series_x.svg",
+      "preco": "R$ 4600,00",
+      "section": "consoles-section"
+    },
+    {
+      "id": 12,
+      "descricao": "Clear GameBoy",
+      "image":"gameboy_clear.svg",
+      "preco": "R$ 990,00",
+      "section": "consoles-section"
+    },
+    {
+      "id": 13,
+      "descricao": "Capa Atari",
+      "image":"capa_atari.svg",
+      "preco": "R$ 35,00",
+      "section": "diversos-section"
+    },
+    {
+      "id": 14,
+      "descricao": "Camisa SNES",
+      "image":"camiseta_nintendo.svg",
+      "preco": "R$ 75,00",
+      "section": "diversos-section"
+    },
+    {
+      "id": 15,
+      "descricao": "Boneco Sonic",
+      "image":"boneco_sonic.svg",
+      "preco": "R$ 165,00",
+      "section": "diversos-section"
+    },
+    {
+      "id": 16,
+      "descricao": "Radio Gamer",
+      "image":"vintage_radio.svg",
+      "preco": "R$ 86,00",
+      "section": "diversos-section"
+    },
+    {
+      "id": 17,
+      "descricao": "Oculos VR",
+      "image":"oculos_vr.svg",
+      "preco": "R$ 3199,00",
+      "section": "diversos-section"
+    },
+    {
+      "id": 18,
+      "descricao": "Fantasia Pikachu",
+      "image":"fantansia_pikachu.svg",
+      "preco": "R$ 135,00",
+      "section": "diversos-section"
+    }
+  ]
