@@ -266,17 +266,29 @@
             </ul>
         </div>
         <form class="flex flex-col md:px-8 md:w-2/3 lg:w-1/2 relative" action="">
+
             <label class="text-base font-bold mb-3" for="">Fale conosco</label>
+            
+            <!-- NOME -->
             <label class="absolute pl-3 top-12 text-sm font-semibold text-gray-300" for="">Nome</label>
-            <input class="px-3 pb-3 pt-10 mb-3 drop-shadow shadow rounded" type="" placeholder="Nome Completo">
-            <textarea class="h-24 p-3 mb-3 drop-shadow shadow rounded" name="" id="" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea>
-            <button class="w-40 px-2 text-sm font-semibold py-3 bg-blue-500 text-white hover:bg-blue-400 duration-150">Enviar mensagem</button>
-        </form>   
+            <input type="text" data-tipo="nome" name="nome" maxlength="40" required class="px-3 pb-3 pt-10 drop-shadow shadow rounded" type="" placeholder="Nome Completo">
+            <span class="mensagem-erro pl-3 pt-1 text-sm text-red-500 font-medium hidden"></span>
+            
+            <!-- MENSAGEM -->
+            <textarea name="mensagem" id="mensagem" maxlength="120" data-tipo="contact" placeholder="Escreva sua mensagem" required class="mt-4 h-24 p-3 drop-shadow shadow rounded"></textarea>
+            <span class="mensagem-erro pl-3 pt-1 text-sm text-red-500 font-medium hidden">O campo mensagem não pode estar vazio.</span>
+
+            <!-- SUBMIT -->
+            <button class="mt-4 w-40 px-2 text-sm font-semibold py-3 bg-blue-500 text-white hover:bg-blue-400 duration-150">Enviar mensagem</button>
+            <span class="mensagem-erro pt-1 text-sm text-red-500 font-medium hidden"></span>
+
+        </form>
     </section>
     
     <!-------FOOTER-------->
     <footer class="text-center flex flex-col items-center py-8">
         <p class="text-sm font-base">Desenvolvido por <span class="font-bold">André Maemura</span> | 2022</p>
     </footer>
+    <script src="js/app.js" type="module"></script>
 </body>
 </html>
