@@ -1,128 +1,128 @@
 [
-    {
-      "nome": "Caneca Stormtrooper",
-      "image":"img/star-wars-1.png",
-      "preco": "R$ 70,00",
-      "section": "star_wars-section",
-      "id": 1    
-    },
-    {
-      "nome": "Boneco Kylo Ren",
-      "image":"img/star-wars-2.png",
-      "preco": "R$ 135,00",
-      "section": "star_wars-section",
-      "id": 2    
-    },
-    {
-      "nome": "Boneco Baby Yoda",
-      "image":"img/star-wars-3.png",
-      "preco": "R$ 115,00",
-      "section": "star_wars-section",
-      "id": 3    
-    },
-    {
-      "nome": "Boneco Stormtrooper",
-      "image":"img/star-wars-4.png",
-      "preco": "R$ 155,00",
-      "section": "star_wars-section",
-      "id": 4    
-    },
-    {
-      "nome": "Boneco Mestre Yoda",
-      "image":"img/star-wars-5.png",
-      "preco": "R$ 125,00",
-      "section": "star_wars-section",
-      "id": 5    
-    },
-    {
-      "nome": "Lego Vader x Pilot",
-      "image":"img/star-wars-6.png",
-      "preco": "R$ 265,00",
-      "section": "star_wars-section",
-      "id": 6    
-    },
-    {
-      "nome": "Controle Xbox Branco",
-      "image":"img/console-1.png",
-      "preco": "R$ 312,00",
-      "section": "consoles-section",
-      "id": 7    
-    },
-    {
-      "nome": "Playstation 5",
-      "image":"img/console-2.png",
-      "preco": "R$ 4380,00",
-      "section": "consoles-section",
-      "id": 8
-    },
-    {
-      "nome": "Nintendinho",
-      "image":"img/console-3.png",
-      "preco": "R$ 715,00",
-      "section": "consoles-section",
-      "id": 9    
-    },
-    {
-      "nome": "Nintendo Switch",
-      "image":"img/console-4.png",
-      "preco": "R$ 416,00",
-      "section": "consoles-section",
-      "id": 10
-    },
-    {
-      "nome": "Xbox serie X",
-      "image":"img/console-5.png",
-      "preco": "R$ 4600,00",
-      "section": "consoles-section",
-      "id": 11
-    },
-    {
-      "nome": "Clear GameBoy",
-      "image":"img/console-6.png",
-      "preco": "R$ 990,00",
-      "section": "consoles-section",
-      "id": 12
-    },
-    {
-      "nome": "Capa Atari",
-      "image":"img/diversos-1.png",
-      "preco": "R$ 35,00",
-      "section": "diversos-section",
-      "id": 13
-    },
-    {
-      "nome": "Camisa SNES",
-      "image":"img/diversos-2.png",
-      "preco": "R$ 75,00",
-      "section": "diversos-section",
-      "id": 14
-    },
-    {
-      "nome": "Boneco Sonic",
-      "image":"img/diversos-3.png",
-      "preco": "R$ 165,00",
-      "section": "diversos-section",
-      "id": 15
-    },
-    {
-      "nome": "Radio Gamer",
-      "image":"img/diversos-4.png",
-      "preco": "R$ 86,00",
-      "section": "diversos-section",
-      "id": 16
-    },
-    {
-      "nome": "Oculos VR",
-      "image":"img/diversos-5.png",
-      "preco": "R$ 3199,00",
-      "section": "diversos-section",
-      "id": 17
-    },
-    {
-      "nome": "Fantasia Pikachu",
-      "image":"img/diversos-6.png",
-      "preco": "R$ 135,00",
-      "section": "diversos-section",
-      "id": 18
-    }
-  ]
+  {
+    "nome": "Caneca Stormtrooper",
+    "image":"img/star-wars-1.png",
+    "preco": "R$ 70,00",
+    "section": "star_wars-section",
+    "id": 1    
+  },
+  {
+    "nome": "Boneco Kylo Ren",
+    "image":"img/star-wars-2.png",
+    "preco": "R$ 135,00",
+    "section": "star_wars-section",
+    "id": 2    
+  },
+  {
+    "nome": "Boneco Baby Yoda",
+    "image":"img/star-wars-3.png",
+    "preco": "R$ 115,00",
+    "section": "star_wars-section",
+    "id": 3    
+  },
+  {
+    "nome": "Boneco Stormtrooper",
+    "image":"img/star-wars-4.png",
+    "preco": "R$ 155,00",
+    "section": "star_wars-section",
+    "id": 4    
+  },
+  {
+    "nome": "Boneco Mestre Yoda",
+    "image":"img/star-wars-5.png",
+    "preco": "R$ 125,00",
+    "section": "star_wars-section",
+    "id": 5    
+  },
+  {
+    "nome": "Lego Vader x Pilot",
+    "image":"img/star-wars-6.png",
+    "preco": "R$ 265,00",
+    "section": "star_wars-section",
+    "id": 6    
+  },
+  {
+    "nome": "Controle Xbox Branco",
+    "image":"img/console-1.png",
+    "preco": "R$ 312,00",
+    "section": "consoles-section",
+    "id": 7    
+  },
+  {
+    "nome": "Playstation 5",
+    "image":"img/console-2.png",
+    "preco": "R$ 4380,00",
+    "section": "consoles-section",
+    "id": 8
+  },
+  {
+    "nome": "Nintendinho",
+    "image":"img/console-3.png",
+    "preco": "R$ 715,00",
+    "section": "consoles-section",
+    "id": 9    
+  },
+  {
+    "nome": "Nintendo Switch",
+    "image":"img/console-4.png",
+    "preco": "R$ 416,00",
+    "section": "consoles-section",
+    "id": 10
+  },
+  {
+    "nome": "Xbox serie X",
+    "image":"img/console-5.png",
+    "preco": "R$ 4600,00",
+    "section": "consoles-section",
+    "id": 11
+  },
+  {
+    "nome": "Clear GameBoy",
+    "image":"img/console-6.png",
+    "preco": "R$ 990,00",
+    "section": "consoles-section",
+    "id": 12
+  },
+  {
+    "nome": "Capa Atari",
+    "image":"img/diversos-1.png",
+    "preco": "R$ 35,00",
+    "section": "diversos-section",
+    "id": 13
+  },
+  {
+    "nome": "Camisa SNES",
+    "image":"img/diversos-2.png",
+    "preco": "R$ 75,00",
+    "section": "diversos-section",
+    "id": 14
+  },
+  {
+    "nome": "Boneco Sonic",
+    "image":"img/diversos-3.png",
+    "preco": "R$ 165,00",
+    "section": "diversos-section",
+    "id": 15
+  },
+  {
+    "nome": "Radio Gamer",
+    "image":"img/diversos-4.png",
+    "preco": "R$ 86,00",
+    "section": "diversos-section",
+    "id": 16
+  },
+  {
+    "nome": "Oculos VR",
+    "image":"img/diversos-5.png",
+    "preco": "R$ 3199,00",
+    "section": "diversos-section",
+    "id": 17
+  },
+  {
+    "nome": "Fantasia Pikachu",
+    "image":"img/diversos-6.png",
+    "preco": "R$ 135,00",
+    "section": "diversos-section",
+    "id": 18
+  }
+]
