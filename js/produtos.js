@@ -12,17 +12,23 @@ search.addEventListener('input', (event) => {
     console.log(event.target.value)
 })
 
+
+// TRABALHANDO 'API'
 const apiProdutos = 'js/db.json'
 
-fetch(apiProdutos)
-.then(dados => dados.json())
+const listaProdutos = () => {
+    return fetch(apiProdutos)
+    .then(dados => dados.json())
+}
+
+listaProdutos()
 .then(resposta => {
-    const listaProdutos = resposta
+    const todasCategorias = resposta
 
     // Filtrar no JSON por SECTION
-    const produtosStarWars = listaProdutos.filter(catalogo => catalogo.section==="star_wars-section")
-    const produtosConsole = listaProdutos.filter(catalogo => catalogo.section==="consoles-section")
-    const produtosDiversos = listaProdutos.filter(catalogo => catalogo.section==="diversos-section")
+    const produtosStarWars = todasCategorias.filter(categoria => categoria.section==="star_wars-section")
+    const produtosConsole = todasCategorias.filter(categoria => categoria.section==="consoles-section")
+    const produtosDiversos = todasCategorias.filter(categoria => categoria.section==="diversos-section")
     
     // Imprimir as informações no html
     produtosStarWars.forEach(produto => sectionStarWars.innerHTML += 
@@ -59,10 +65,10 @@ fetch(apiProdutos)
 fetch(apiProdutos)
 .then(dados => dados.json())
 .then(resposta => {
-    const listaProdutos = resposta
+    const todasCategorias = resposta
 
     // Imprimir todos os produtos
-    listaProdutos.forEach(produto => todosProdutos.innerHTML +=
+    todasCategorias.forEach(produto => todosProdutos.innerHTML +=
         (`<li class="mb-10 mx-2 lg:mx-1.5 relative">
             <div class="absolute top-2 right-3">
                 <i class="fa-solid fa-trash text-white mr-3"></i>
