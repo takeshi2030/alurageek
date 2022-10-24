@@ -4,6 +4,14 @@ const sectionConsoles = document.getElementById('lista-consoles')
 const sectionDiversos = document.getElementById('lista-diversos')
 const todosProdutos = document.getElementById('lista-produtos')
 
+// FUNCTION SEARCH 
+const content = document.querySelector('.content')
+const search = document.querySelector('#searchInput')
+
+search.addEventListener('input', (event) => {
+    console.log(event.target.value)
+})
+
 const apiProdutos = 'js/db.json'
 
 fetch(apiProdutos)
@@ -70,7 +78,6 @@ fetch(apiProdutos)
 
 })
 
-// FUNCTION PARA VERIFICAR SE TEM 6 PRODUTOS NA LINHA
-// SE SIM => OS DOIS ULTIMOS RECEBEM class="hidden"
-
-// FUNCTION SEARCH
+// CRIAR CONST PARA PEGAR OS DOIS ULTIMO PRODUTOS
+// CRIAR FUNCTION PARA VERIFICAR SE TEM 6 PRODUTOS NA LINHA
+// SE SIM => OS DOIS ULTIMOS RECEBEM Class="hidden lg:block"
